@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/quaresmaCatch"
+        android:layout_width="244dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="171dp"
+        android:onClick="quaresma"
+        android:text="Quaresma Catch"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messiCatch2" />
+
+    <Button
+        android:id="@+id/messiCatch2"
+        android:layout_width="244dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="messi"
+        android:text="Messi Catch"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/quaresmaCatch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ronaldoCatch" />
+
+    <Button
+        android:id="@+id/ronaldoCatch"
+        android:layout_width="244dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:onClick="ronaldo"
+        android:text="Ronaldo Catch"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/messiCatch2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseGame" />
+
+    <TextView
+        android:id="@+id/chooseGame"
+        android:layout_width="244dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="76dp"
+        android:gravity="center"
+        android:text="Choose Game"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/ronaldoCatch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
